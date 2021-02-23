@@ -1,4 +1,4 @@
-// COMPARISON OPERATORS
+// === COMPARISON OPERATORS
 
 let value1 = 35;
 let value2 = 100;
@@ -25,7 +25,7 @@ console.log('Are my two conditons true or false?',
 console.log('Combining || &&: what is the result?',
     (value1 > value2 || value !== value2) && value2 > value1);
 
-// CONTROL STRUCTURE
+// === CONTROL STRUCTURE
 
 // if,else
 
@@ -48,8 +48,81 @@ if (num1 > num2) {
     alert('You lost!');
 }
 
-// LOOPS
+// === LOOPS
+
+// count loop
 
 for (let i = 0; i < 10; i++) {
     console.log('counter: ', i);
+}
+
+// infinite loop that breaks the system
+
+// for (let i = 20; i > 0; i--) {
+//     console.log('downard counter: ', i);
+// }
+
+// create a for loop that starts at index 0 and counts by 10 up to 100
+
+for (let i = 0; i <= 100; i += 10) {
+    console.log('counter:', i);
+}
+
+// while loop
+
+let i = 0;
+
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+// do while
+
+let j = 0;
+
+do {
+    console.log(j);
+    j++;
+} while (j < 10);
+
+// === Ternary
+
+let age = 20;
+
+age >= 21 ? alert("Have fun, be safe!") :
+    alert("Sorry come back when you're older!");
+
+// syntax --> condition ? expression_1 : expression_2;
+
+// var age = 19;
+// var canDrive;
+// if (age > 16) {
+//     canDrive = 'yes';
+// } else {
+//     canDrive = 'no';
+// }
+
+var age = 19;
+var canDrive = age > 16 ? 'yes' : 'no';
+
+// === SWITCH STATEMENTS
+
+let animal = 'cow';
+
+switch (animal) {
+    case 'dog':
+        alert("It's a dog!");
+        break;
+    case 'cat':
+        alert("It's a cat!");
+        break;
+    case 'monkey':
+        alert("It's a monkey");
+        break;
+    case 'cow':
+        alert("It's a cow!");
+        break;
+    default:
+        alert("There is no match!");
 }
