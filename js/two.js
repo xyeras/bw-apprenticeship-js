@@ -23,7 +23,7 @@ console.log('Are my two conditons true or false?',
 // combining logical \\ and logical &&
 
 console.log('Combining || &&: what is the result?',
-    (value1 > value2 || value !== value2) && value2 > value1);
+    (value1 > value2 || value1 !== value2) && value2 > value1);
 
 // === CONTROL STRUCTURE
 
@@ -103,8 +103,8 @@ age >= 21 ? alert("Have fun, be safe!") :
 //     canDrive = 'no';
 // }
 
-var age = 19;
-var canDrive = age > 16 ? 'yes' : 'no';
+// var age = 19;
+// var canDrive = age > 16 ? 'yes' : 'no';
 
 // === SWITCH STATEMENTS
 
@@ -126,3 +126,43 @@ switch (animal) {
     default:
         alert("There is no match!");
 }
+
+// === FUNCTIONS
+
+function foo() {
+    console.log('first function');
+}
+
+foo();
+
+function countDown() {
+    for (let i = 10; i >= 0; i--) {
+        console.log('counting from function', i);
+    }
+}
+
+countDown();
+
+// Arrow Function Expressions
+
+const doMath = () => {
+    let num1 = 10;
+    let num2 = 24;
+
+    console.log('sum: ', num1 + num2)
+}
+
+doMath();
+
+const startMath = () => {
+    let firstNum = 20;
+    let secondNum = 30;
+    debugger;
+    sumNum(firstNum, secondNum);
+}
+
+const sumNum = (arg1, arg2) => {
+    console.log('sum of numbers: ', val1 + val2);
+}
+
+startMath();
