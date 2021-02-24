@@ -53,13 +53,13 @@ countToTen();
 
 // ===================================================
 
-const countToTenFromNewStartingPoint = startingNumber => {
+const countToTenFromNewStartingPoint = (startingNumber) => {
     
     // debugger;
     
     if (startingNumber <= 10) {
         
-        for(startingNumber; startingnumber <= 10; startingNumber++) {
+        for(startingNumber; startingNumber <= 10; startingNumber++) {
             
             console.log(startingNumber);
 
@@ -88,4 +88,10 @@ const welcomeNewUser = () => {
 
     alert(fullMessage);
 
+}
+
+const tellFavoriteAnimal = () => {
+    const favoriteAnimal = "stoat";
+
+    alert("Liz's favorite animal is a " + favoriteAnimal + ".");
 }
