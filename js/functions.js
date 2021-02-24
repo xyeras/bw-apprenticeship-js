@@ -73,3 +73,17 @@ const countToTenFromNewStartingPoint = startingNumber => {
 }
 
 countToTenFromNewStartingPoint(5);
+
+// ====================================================
+
+const welcomeNewUser = () => {
+    
+    let firstName = 'Aiden';
+    let lastName = 'Pierce';
+
+    let welcomeMessage = 'Hey there, ';
+    let fullMessage = welcomeMessage + firstName + ' ' + lastName;
+
+    alert(fullMessage);
+
+}
