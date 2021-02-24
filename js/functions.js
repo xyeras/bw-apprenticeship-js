@@ -78,6 +78,8 @@ countToTenFromNewStartingPoint(5);
 
 const welcomeNewUser = () => {
     
+    // debugger;
+
     let firstName = 'Aiden';
     let lastName = 'Pierce';
 
