@@ -42,9 +42,34 @@ multiplyTwoNumbers(15, 13);
 // ARROW FUNCTIONS
 
 const countToTen = () => {
+
     for (let i = 0; i <= 10; i++) {
         console.log(i);
     }
+
 }
 
+countToTen();
+
 // ===================================================
+
+const countToTenFromNewStartingPoint = startingNumber => {
+    
+    // debugger;
+    
+    if (startingNumber <= 10) {
+        
+        for(startingNumber; startingnumber <= 10; startingNumber++) {
+            
+            console.log(startingNumber);
+
+        }
+
+    } else {
+
+        alert('Number is larger than 10');
+
+    }
+}
+
+countToTenFromNewStartingPoint(5);
