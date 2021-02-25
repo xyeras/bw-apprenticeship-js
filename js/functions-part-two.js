@@ -8,7 +8,7 @@ const guessNumber = () => {
         let userInput = prompt('Guess a number from 1 to 10. You have 3 guesses.');
 
         const verified = verifyNumber(userInput);
-        // debugger;
+        
         if (verified) {
             alert('That is not a number!');
         } else if (userInput == correctNumber) {
@@ -26,10 +26,6 @@ const guessNumber = () => {
 
 const verifyNumber = (userInput) => {
 
-    const result = isNaN(userInput);
-
-    // debugger;
-
-    return result;
+    return isNaN(userInput);
 
 }
