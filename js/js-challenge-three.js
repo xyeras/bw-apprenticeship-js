@@ -76,7 +76,7 @@ const guessNumber = () => {
     const correctNumber = Math.floor(Math.random() * 10 + 1);
 
     for (let i = 0; i <= 2; i ++) {
-        let userInput = prompt('Guess a number from 1 to 10');
+        let userInput = prompt('Guess a number from 1 to 10. You have 3 guesses.');
 
         if (userInput == correctNumber) {
             alert('Correct! You win!');
