@@ -41,5 +41,6 @@ const guessCorrectNumber = () => {
         alert('Awww, you did not get it correct. Try again!');
     }
 
+    // guess == correctNumber ? alert('Wooo, you got it right!') : alert('Awww, you did not get it correct. Try again!');
 
 }
