@@ -12,20 +12,32 @@ const verifyAge = () => {
 
 verifyAge();
 
-// Exercise 4
+// Exercise 4 Part 1
 
-const convertCelsiusToFahrenheit = (num) => {
+// const convertCelsiusToFahrenheit = (num) => {
+//     // debugger;
+
+//     const fahrenheit = num * 1.8 + 32;
+
+//     console.log(fahrenheit);
+
+// }
+
+// convertCelsiusToFahrenheit(100);
+// convertCelsiusToFahrenheit(3);
+// convertCelsiusToFahrenheit(300);
+
+// Exercise 4 Part 2
+
+const convertCelsiusToFahrenheit = () => {
     // debugger;
 
-    const fahrenheit = num * 1.8 + 32;
+    const userInput = prompt('Enter your number');
+    const fahrenheit = userInput * 1.8 + 32;
 
-    console.log(fahrenheit);
+    alert(userInput + ' *C = ' + fahrenheit + ' *F');
 
 }
-
-convertCelsiusToFahrenheit(100);
-convertCelsiusToFahrenheit(3);
-convertCelsiusToFahrenheit(300);
 
 // Exercise 5
 
