@@ -39,6 +39,18 @@ const convertCelsiusToFahrenheit = () => {
 
 }
 
+// Exercise 4 Part 3
+
+const convertFahrenheitToCelsius = () => {
+    // debugger;
+
+    const userInput = prompt('Enter your number');
+    const celsius = (userInput - 32) / 1.8;
+
+    alert(userInput + ' *F = ' + celsius + ' *C');
+
+}
+
 // Exercise 5
 
 const guessCorrectNumber = () => {
