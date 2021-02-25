@@ -90,8 +90,23 @@ const welcomeNewUser = () => {
 
 }
 
+// ====================================================
+
 const tellFavoriteAnimal = () => {
     const favoriteAnimal = "stoat";
 
     alert("Liz's favorite animal is a " + favoriteAnimal + ".");
 }
+
+// =====================================================
+
+const getUserName = () => {
+
+    // debugger;
+
+    const name = prompt("What is your name?");
+
+    alert('Welcome, ' + name + "!");
+}
+
+getUserName();
