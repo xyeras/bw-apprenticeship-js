@@ -90,6 +90,7 @@ for (let i = 0; i < animals.length; i++) {
 
 // =========== Higher Order Arrays
 
+// for each
 animals.forEach(function (animal) {
     // debugger
     console.log('my animal', animal);
@@ -99,6 +100,8 @@ animals.forEach(function (animal){
     console.log('my animal name', animal['name']);
 });
 
+
+// arr.map()
 let animalTypes = animals.map(animal => {
     console.log('inside the map func', animal);
     return animal.type;
