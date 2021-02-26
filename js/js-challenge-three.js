@@ -26,6 +26,9 @@ const simpleCalculatorStart = () => {
         const secondValue = parseInt(
             prompt('Please enter the second number.'));
 
+        // could have made third varible for operation here
+        // and have the next function take three parameters
+
         const result = performMathOperation(firstValue, secondValue);
 
         alert('The result is ' + result + '.');
@@ -34,6 +37,7 @@ const simpleCalculatorStart = () => {
 
 }
 
+// could have passed in a third parameter taken from the first function
 const performMathOperation = (firstValue, secondValue) => {
     
     // debugger;
