@@ -99,7 +99,7 @@ animals.forEach(function (animal){
     console.log('my animal name', animal['name']);
 });
 
-let animalTypes = animals.map((animalType) => {
+let animalTypes = animals.map(animal => {
     console.log('inside the map func', animal);
     return animal.type;
 });
