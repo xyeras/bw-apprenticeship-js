@@ -116,3 +116,11 @@ let evilAnimals = animals.filter(animal => {
 });
 
 console.log('evil animals:', evilAnimals);
+
+let evilAnimalNames = animals.filter((animal) => {
+    return animal.isEvil === true;
+}).map((evilAnimal) => {
+    return evilAnimal.name;
+});
+
+console.log('evil animal names:', evilAnimalNames);
