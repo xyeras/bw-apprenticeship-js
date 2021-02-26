@@ -108,3 +108,11 @@ let animalTypes = animals.map(animal => {
 });
 
 console.log('animal types:', animalTypes);
+
+// arr.filter()
+let evilAnimals = animals.filter(animal => {
+    // check if object is evil
+    return animal.isEvil === true; // the filtering condition
+});
+
+console.log('evil animals:', evilAnimals);
