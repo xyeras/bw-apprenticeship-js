@@ -136,9 +136,13 @@ let items = [
     { name: 'iPad Pro', price: 800, category: 'technology' },
     { name: 'Ember Coffee Mug', price: 80, category: 'home' },
     { name: 'Electric Wine Bottle Opener', price: 20, category: 'home' },
-  ];
+];
 
 // Loop through the items, console.log the price with a concatenated string that let's the user know the total price
+
+// Realized I misread the instruction...
+// Challenge is asking for individual prices, not total price
+// My Solution (The Wrong Version)
 
 let totalPrice = 0;
 
@@ -147,7 +151,6 @@ for (let key in items) {
 }
 
 console.log('The total price of all items together is $', totalPrice);
-
 
 // Create a new array using the map method, that returns all the names of each item
 
@@ -180,3 +183,61 @@ let over100DollarItems = items.filter((item) => {
 });
 
 console.log('Items over $100:', over100DollarItems);
+
+/* Alex's Solution
+
+// MORNING CHALLENGE: ARRAY METHODS
+
+// For Each Method
+items.forEach(item => {
+  // console.log('The total for the ' + item.name + ' is: $' + item.price);
+});
+items.forEach(item => {
+  // console.log(`The backtic total for the ${item.name} is: $${item.price}`);
+});
+
+// Challenge Two: Map Method
+const itemNames = items.map(item => {
+  return item.name;
+});
+console.log(itemNames);
+
+const itemNames2 = items.map(item => item.name);
+console.log(itemNames2);
+
+// Filter Method
+const cheapItems = items.filter(item => {
+  return item.price < 100;
+});
+
+const cheapItems2 = items.filter(item => item.price < 100);
+
+console.log(cheapItems);
+console.log(cheapItems2);
+
+// Find Method
+const foundItem = items.find(item => {
+  return item.name === 'Macbook Pro';
+});
+console.log(foundItem);
+
+// Chaining Methods
+const expensiveItems = items
+  .filter(item => {
+    return item.price > 100;
+  })
+  .map(exp => {
+    // debugger;
+    return exp.name;
+  });
+
+const expensiveItems2 = items
+  .filter(item => item.price > 100)
+  .map(ex => {
+    return { price: ex.price, name: ex.name };
+  });
+
+console.log(expensiveItems);
+console.log(expensiveItems2);
+
+*/
