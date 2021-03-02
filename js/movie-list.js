@@ -63,6 +63,8 @@ const moviesDetails = () => {
 
 moviesDetails();
 
+// can remove return
+// const foundItem = movies.find(movie => movie.title === movieTitle)
 const movieDetails = (movieTitle) => {
     const foundItem = movies.find(movie => {
         return movie.name === movieTitle;
